@@ -1,0 +1,40 @@
+{
+    "name": "playtini/console-pack",
+    "version": "0.1.1",
+    "description": "Playtini Console Pack",
+    "type": "library",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "vl",
+            "email": "vl@playtini.ua"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Playtini\\ConsolePack\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "psr/log": "^1.0",
+        "symfony/console": "^4.1",
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/yaml": "^4.1",
+        "symfony/process": "^4.1",
+        "symfony/finder": "^4.1",
+        "symfony/cache": "^4.1",
+        "symfony/dotenv": "^4.1",
+        "doctrine/dbal": "^2.7",
+        "symfony/css-selector": "^4.1",
+        "symfony/dom-crawler": "^4.1",
+        "predis/predis": "^1.1",
+        "google/auth": "^1.3",
+        "maxmind-db/reader": "^1.3"
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
