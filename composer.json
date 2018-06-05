@@ -1,9 +1,9 @@
 {
     "name": "playtini/console-pack",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Playtini Console Pack",
     "type": "library",
-    "license": "GNU",
+    "license": "proprietary",
     "authors": [
         {
             "name": "vl",
