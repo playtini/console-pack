@@ -1,5 +1,7 @@
 <?php
 
+namespace Playtini\ConsolePack;
+
 class EmailUtils
 {
     public static function canonize($email)

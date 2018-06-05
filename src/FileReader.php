@@ -1,5 +1,7 @@
 <?php
 
+namespace Playtini\ConsolePack;
+
 class FileReader
 {
     private $f;
