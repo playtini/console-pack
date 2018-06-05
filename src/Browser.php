@@ -17,7 +17,7 @@ class Browser
 
     public function get(string $url): ?string
     {
-        $cache = new FilesystemAdapter('browser', 86400 * 7, __DIR__ . '/../../var/cache');
+        $cache = new FilesystemAdapter('browser', 86400 * 7, $this->cacheDirectory);
 
         $result = null;
         try {
