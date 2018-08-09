@@ -161,21 +161,14 @@ class Browser
         return $this->lastStatusCode;
     }
 
-    public function setLastStatusCode(int $lastStatusCode): Browser
-    {
-        $this->lastStatusCode = $lastStatusCode;
-
-        return $this;
-    }
-
     public function getLastResponseHeaders(): ?array
     {
         return $this->lastResponseHeaders;
     }
 
-    public function setLastResponseHeaders(?array $lastResponseHeaders): Browser
+    public function setTimeout(int $timeout): self
     {
-        $this->lastResponseHeaders = $lastResponseHeaders;
+        $this->timeout = $timeout;
 
         return $this;
     }
