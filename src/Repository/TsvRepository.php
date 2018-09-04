@@ -28,6 +28,15 @@ class TsvRepository
         $this->filename = FileLocator::findFileSomewhere($this->filename);
     }
 
+    public function get(string $key, $defaultValue = null): ?string
+    {
+        if (!$this->isLoaded) {
+            $this->load();
+        }
+
+        return $this->items[$this->normalizeKey($key)] ?? $defaultValue;
+    }
+
     public function load()
     {
         if ($this->isLoaded) {
