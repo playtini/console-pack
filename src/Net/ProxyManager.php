@@ -1,6 +1,6 @@
 <?php
 
-namespace Playtini\ConsolePack;
+namespace Playtini\ConsolePack\Net;
 
 class ProxyManager
 {
@@ -19,6 +19,13 @@ class ProxyManager
     /** @var array host=>bannedTillTime */
     private $badHosts = [];
 
+    /**
+     * ProxyManager constructor.
+     * @param array|string $hosts
+     * @param int $port
+     * @param string|null $username
+     * @param string|null $password
+     */
     public function __construct($hosts, int $port, string $username = null, string $password = null)
     {
         if (!is_array($hosts)) {

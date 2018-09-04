@@ -1,6 +1,6 @@
 <?php
 
-namespace Playtini\ConsolePack;
+namespace Playtini\ConsolePack\Io;
 
 class FileReader
 {
@@ -18,16 +18,25 @@ class FileReader
         }
     }
 
+    public function load()
+    {
+        $result = [];
+
+        foreach ($this->lines() as $line) {
+            $result[] = $line;
+        }
+
+        return $result;
+    }
+
     public function lines()
     {
         $nextLine = null;
         while (!feof($this->f)) {
             $s = fgets($this->f);
-            if ($s === false) {
-                continue;
+            if ($s !== false) {
+                yield rtrim($s, "\r\n");
             }
-
-            yield rtrim($s, "\r\n");
         }
     }
 }

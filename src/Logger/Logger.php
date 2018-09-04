@@ -1,6 +1,6 @@
 <?php
 
-namespace Playtini\ConsolePack;
+namespace Playtini\ConsolePack\Logger;
 
 use Psr\Log\LoggerInterface;
 

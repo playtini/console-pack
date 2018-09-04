@@ -1,6 +1,6 @@
 <?php
 
-namespace Playtini\ConsolePack;
+namespace Playtini\ConsolePack\Net;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Cookie\CookieJar;

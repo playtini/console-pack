@@ -1,6 +1,6 @@
 <?php
 
-namespace Playtini\ConsolePack;
+namespace Playtini\ConsolePack\Io;
 
 class FileWriter
 {
