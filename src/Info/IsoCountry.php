@@ -15,7 +15,7 @@ class IsoCountry
     {
         static $cache = [];
         if (!$cache) {
-            $filename = dirname(__DIR__) . '/data/iso3166-1.txt';
+            $filename = dirname(__DIR__, 2) . '/data/iso3166-1.txt';
             if (!is_file($filename)) {
                 throw new \Exception(sprintf('Cannot find ISO3166-1 file "%s"', $filename));
             }
