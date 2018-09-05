@@ -55,7 +55,7 @@ class FileLocator
         throw new \Exception(sprintf('Cannot find file "%s"', $filename));
     }
 
-    private static function getSuffix(string $filename): string
+    private static function getSuffix(string $filename = null): string
     {
         if ($filename === null) {
             return '';
